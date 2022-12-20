@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    max-width: 736px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 1rem;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  
+  .footer p {
+    color: #4EA8DE;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .deleteAll {
+    cursor: pointer;
+    color: #bf3000 !important;
+  }
+
+  .deleteAll:hover {
+    text-decoration: underline
+  }

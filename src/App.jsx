@@ -52,17 +52,25 @@ function App() {
     });
     setTasksAndSave(newTasks);  
   }
+
+  function deleteAll(){
+    const sure = confirm('Are you sure you want to delete all tasks');
+    if(sure) {
+      const newTasks = [];
+      setTasksAndSave(newTasks);
+    }
+  }
   
 
   return (
     <>
-      <Header onAddTask={addTask}/>
+      <Header onAddTask={addTask} />
       <Tasks 
         tasks={tasks}
         onDelete={deleteTaskById}
         onComplete={toggleTaskCompletedById}
       />
-      <Footer />
+      <Footer deleteAll={deleteAll} />
     </>
   )
 }
